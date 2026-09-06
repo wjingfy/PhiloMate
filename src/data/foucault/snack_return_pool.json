@@ -1,0 +1,26 @@
+{
+  "philosopherId": "foucault",
+  "items": [
+    {
+      "id": "foucault_french_basket",
+      "name": "法式面包奶酪葡萄酒",
+      "displayName": "法棍切片、奶酪与白葡萄酒",
+      "source": "在这个蛮荒之国，我最想念的是地道的法国面包、一点奶酪和一瓶葡萄酒。",
+      "note": "福柯谈在异国最想念之物；作为一件回赠物展示（法棍切片+奶酪+酒瓶）"
+    },
+    {
+      "id": "foucault_sandwich_cola",
+      "name": "三明治配可乐",
+      "displayName": "法棍火腿黄油三明治与瓶装可乐",
+      "source": "一个上好的俱乐部三明治配可乐，那就是我的乐趣。真的。",
+      "note": "福柯自述简单的快乐；造型归美工"
+    },
+    {
+      "id": "foucault_black_coffee",
+      "name": "黑咖啡",
+      "displayName": "黑咖啡",
+      "source": "他从早到晚待在国家图书馆，靠黑咖啡和香烟源源不断地工作……",
+      "note": "传记所述工作习惯；只回赠咖啡，香烟不入池"
+    }
+  ]
+}

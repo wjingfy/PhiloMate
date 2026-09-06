@@ -1,0 +1,23 @@
+{
+  "philosopherId": "wangyangming",
+  "items": [
+    {
+      "id": "wang_mountain_tea",
+      "name": "山泉新茶",
+      "source": "山僧留客荐新茶·山中待客之礼",
+      "note": "汝且饮之。"
+    },
+    {
+      "id": "wang_longchang_fern",
+      "name": "龙场山蕨",
+      "source": "龙场岁月亲手所采（采蕨西山）",
+      "note": "汝且收下，莫辞。"
+    },
+    {
+      "id": "wang_liangnong_cake",
+      "name": "余姚梁弄大糕",
+      "source": "归姚讲学时与诸生同食",
+      "note": "汝且尝之。"
+    }
+  ]
+}

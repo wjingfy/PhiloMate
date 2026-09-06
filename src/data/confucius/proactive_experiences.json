@@ -1,0 +1,287 @@
+{
+  "version": "proactive_experiences_v1_3",
+  "philosopher": "confucius",
+  "status": "major_events_25",
+  "description": "开屏主动发言·分享经历。主源《史记·孔子世家》。只收重大事件；合并后不再补分章上文，独白按世家原文转第一人称。",
+  "rules": [
+    "第一人称（吾/丘/予）；半白半文、论语口吻",
+    "monologue = 世家原文转第一人称（叙事孔子/仲尼→丘；引号内不改称呼）",
+    "sourceText 为该事件连续世家原文；禁止再补分章上文背景",
+    "只留重大事件；同一事件不拆条",
+    "不复用废纸团原文作展示",
+    "不用太史公曰、索隐、后嗣、本人卒葬",
+    "保留见南子、回死、由死、病中泰山坏",
+    "改写紧贴 sourceText；不编造原文没有的情节与评点"
+  ],
+  "targetLength": {
+    "min": 9,
+    "max": 100,
+    "hint": "一条一事；独白不超过100字，靠删旁支原文而非缩句"
+  },
+  "summary": {
+    "count": 25,
+    "sourceChars": {
+      "min": 9,
+      "avg": 60,
+      "max": 99
+    },
+    "monologueChars": {
+      "min": 9,
+      "avg": 58,
+      "max": 98
+    },
+    "avgChars": 58,
+    "minChars": 9,
+    "maxChars": 98
+  },
+  "experiences": [
+    {
+      "id": "exp_01",
+      "lifeStage": "youth",
+      "title": "儿时陈俎豆",
+      "shijiaSection": "birth_youth",
+      "sourceText": "孔子為兒嬉戲，常陳俎豆，設禮容。",
+      "monologue": "丘为儿嬉戏，常陈俎豆，设礼容。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_02",
+      "lifeStage": "youth",
+      "title": "母逝合葬防山",
+      "shijiaSection": "birth_youth",
+      "sourceText": "丘生而叔梁紇死，葬於防山。防山在魯東，由是孔子疑其父墓處，母諱之也。孔子母死，乃殯五父之衢，蓋其慎也。郰人輓父之母誨孔子父墓，然後往合葬於防焉。",
+      "monologue": "丘生而叔梁纥死，葬于防山。防山在鲁东，由是丘疑其父墓处，母讳之也。丘母死，乃殡五父之衢，盖其慎也。郰人挽父之母诲丘父墓，然后往合葬于防焉。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_03",
+      "lifeStage": "youth",
+      "title": "季氏飨士见绌",
+      "shijiaSection": "birth_youth",
+      "sourceText": "孔子要絰，季氏饗士，孔子與往。陽虎絀曰：「季氏饗士，非敢饗子也。」孔子由是退。",
+      "monologue": "丘要绖，季氏飨士，丘与往。阳虎绌曰：「季氏飨士，非敢飨子也。」丘由是退。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_04",
+      "lifeStage": "zhao",
+      "title": "适周问礼",
+      "shijiaSection": "zhao_gong",
+      "sourceText": "適周問禮，蓋見老子云。辭去，而老子送之曰：「聰明深察而近於死者，好議人者也。博辯廣大危其身者，發人之惡者也。為人子者毋以有己，為人臣者毋以有己。」",
+      "monologue": "适周问礼，盖见老子云。辞去，而老子送之曰：「聪明深察而近于死者，好议人者也。博辩广大危其身者，发人之恶者也。为人子者毋以有己，为人臣者毋以有己。」",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_05",
+      "lifeStage": "zhao",
+      "title": "齐闻韶",
+      "shijiaSection": "zhao_gong",
+      "sourceText": "孔子適齊，為高昭子家臣，欲以通乎景公。與齊太師語樂，聞韶音，學之，三月不知肉味，齊人稱之。",
+      "monologue": "丘适齐，为高昭子家臣，欲以通乎景公。与齐太师语乐，闻韶音，学之，三月不知肉味，齐人称之。",
+      "echoAnalectsIds": [
+        "7.14"
+      ]
+    },
+    {
+      "id": "exp_06",
+      "lifeStage": "zhao",
+      "title": "齐不能用而去",
+      "shijiaSection": "zhao_gong",
+      "sourceText": "齊大夫欲害孔子，孔子聞之。景公曰：「吾老矣，弗能用也。」孔子遂行，反乎魯。",
+      "monologue": "齐大夫欲害丘，丘闻之。景公曰：「吾老矣，弗能用也。」丘遂行，反乎鲁。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_07",
+      "lifeStage": "ding",
+      "title": "为中都宰",
+      "shijiaSection": "ding_gong",
+      "sourceText": "其後定公以孔子為中都宰，一年，四方皆則之。由中都宰為司空，由司空為大司寇。",
+      "monologue": "其后定公以丘为中都宰，一年，四方皆则之。由中都宰为司空，由司空为大司寇。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_08",
+      "lifeStage": "ding",
+      "title": "夹谷之会",
+      "shijiaSection": "ding_gong",
+      "sourceText": "乃使使告魯為好會，會於夾谷。優倡侏儒為戲而前。孔子趨而進，歷階而登，不盡一等，曰：「匹夫而營惑諸侯者罪當誅！請命有司！」有司加法焉，手足異處。",
+      "monologue": "乃使使告鲁为好会，会于夹谷。优倡侏儒为戏而前。丘趋而进，历阶而登，不尽一等，曰：「匹夫而营惑诸侯者罪当诛！请命有司！」有司加法焉，手足异处。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_09",
+      "lifeStage": "ding",
+      "title": "堕三都",
+      "shijiaSection": "ding_gong",
+      "sourceText": "定公十三年夏，孔子言於定公曰：「臣無藏甲，大夫毋百雉之城。」使仲由為季氏宰，將墮三都。於是叔孫氏先墮郈。遂墮費。十二月，公圍成，弗克。",
+      "monologue": "定公十三年夏，丘言于定公曰：「臣无藏甲，大夫毋百雉之城。」使仲由为季氏宰，将堕三都。于是叔孙氏先堕郈。遂堕费。十二月，公围成，弗克。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_10",
+      "lifeStage": "ding",
+      "title": "女乐至鲁而去",
+      "shijiaSection": "ding_gong",
+      "sourceText": "於是選齊國中女子好者八十人，皆衣文衣而舞康樂，文馬三十駟，遺魯君。桓子卒受齊女樂，三日不聽政；郊，又不致膰俎於大夫。孔子遂行。歌曰：「彼婦之口，可以出走；彼婦之謁，可以死敗。蓋優哉游哉，維以卒歲！」",
+      "monologue": "于是选齐国中女子好者八十人，皆衣文衣而舞康乐，文马三十驷，遗鲁君。桓子卒受齐女乐，三日不听政；郊，又不致膰俎于大夫。丘遂行。歌曰：「彼妇之口，可以出走；彼妇之谒，可以死败。盖优哉游哉，维以卒岁！」",
+      "echoAnalectsIds": [
+        "18.4"
+      ]
+    },
+    {
+      "id": "exp_11",
+      "lifeStage": "travel",
+      "title": "过匡被拘",
+      "shijiaSection": "ding_gong",
+      "sourceText": "將適陳，過匡，匡人聞之，以為魯之陽虎。陽虎嘗暴匡人，匡人於是遂止孔子。孔子狀類陽虎，拘焉五日。孔子曰：「文王既沒，文不在茲乎？天之將喪斯文也，後死者不得與于斯文也。天之未喪斯文也，匡人其如予何！」",
+      "monologue": "将适陈，过匡，匡人闻之，以为鲁之阳虎。阳虎尝暴匡人，匡人于是遂止丘。丘状类阳虎，拘焉五日。丘曰：「文王既没，文不在兹乎？天之将丧斯文也，后死者不得与于斯文也。天之未丧斯文也，匡人其如予何！」",
+      "echoAnalectsIds": [
+        "11.23",
+        "9.5"
+      ]
+    },
+    {
+      "id": "exp_12",
+      "lifeStage": "travel",
+      "title": "见南子",
+      "shijiaSection": "ding_gong",
+      "sourceText": "靈公夫人有南子者。孔子辭謝，不得已而見之。孔子曰：「吾鄉為弗見，見之禮答焉。」子路不說。孔子矢之曰：「予所不者，天厭之！天厭之！」",
+      "monologue": "灵公夫人有南子者。丘辞谢，不得已而见之。丘曰：「吾乡为弗见，见之礼答焉。」子路不说。丘矢之曰：「予所不者，天厌之！天厌之！」",
+      "echoAnalectsIds": [
+        "6.28"
+      ]
+    },
+    {
+      "id": "exp_13",
+      "lifeStage": "travel",
+      "title": "桓魋拔树",
+      "shijiaSection": "ai_gong",
+      "sourceText": "孔子去曹適宋，與弟子習禮大樹下。宋司馬桓魋欲殺孔子，拔其樹。孔子去。弟子曰：「可以速矣。」孔子曰：「天生德於予，桓魋其如予何！」",
+      "monologue": "丘去曹适宋，与弟子习礼大树下。宋司马桓魋欲杀丘，拔其树。丘去。弟子曰：「可以速矣。」丘曰：「天生德于予，桓魋其如予何！」",
+      "echoAnalectsIds": [
+        "7.23"
+      ]
+    },
+    {
+      "id": "exp_14",
+      "lifeStage": "travel",
+      "title": "丧家之狗",
+      "shijiaSection": "ai_gong",
+      "sourceText": "孔子適鄭，與弟子相失，孔子獨立郭東門。鄭人或謂子貢曰：「纍纍若喪家之狗。」子貢以實告孔子。孔子欣然笑曰：「形狀，末也。而謂似喪家之狗，然哉！然哉！」",
+      "monologue": "丘适郑，与弟子相失，丘独立郭东门。郑人或谓子贡曰：「累累若丧家之狗。」子贡以实告丘。丘欣然笑曰：「形状，末也。而谓似丧家之狗，然哉！然哉！」",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_15",
+      "lifeStage": "travel",
+      "title": "陈蔡绝粮",
+      "shijiaSection": "ai_gong",
+      "sourceText": "於是乃相與發徒役圍孔子於野。不得行，絕糧。從者病，莫能興。孔子講誦弦歌不衰。子路慍見曰：「君子亦有窮乎？」孔子曰：「君子固窮，小人窮斯濫矣。」",
+      "monologue": "于是乃相与发徒役围丘于野。不得行，绝粮。从者病，莫能兴。丘讲诵弦歌不衰。子路愠见曰：「君子亦有穷乎？」丘曰：「君子固穷，小人穷斯滥矣。」",
+      "echoAnalectsIds": [
+        "15.2"
+      ]
+    },
+    {
+      "id": "exp_16",
+      "lifeStage": "travel",
+      "title": "长沮桀溺",
+      "shijiaSection": "ai_gong",
+      "sourceText": "長沮、桀溺耦而耕，孔子使子路問津焉。桀溺曰：「悠悠者天下皆是也，而誰以易之？且與其從辟人之士，豈若從辟世之士哉！」子路以告孔子，孔子憮然曰：「鳥獸不可與同羣。天下有道，丘不與易也。」",
+      "monologue": "长沮、桀溺耦而耕，丘使子路问津焉。桀溺曰：「悠悠者天下皆是也，而谁以易之？且与其从辟人之士，岂若从辟世之士哉！」子路以告丘，丘怃然曰：「鸟兽不可与同群。天下有道，丘不与易也。」",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_17",
+      "lifeStage": "travel",
+      "title": "接舆歌凤",
+      "shijiaSection": "ai_gong",
+      "sourceText": "楚狂接輿歌而過孔子，曰：「鳳兮鳳兮，何德之衰！往者不可諫兮，來者猶可追也！已而已而，今之從政者殆而！」孔子下，欲與之言。趨而去，弗得與之言。",
+      "monologue": "楚狂接舆歌而过丘，曰：「凤兮凤兮，何德之衰！往者不可谏兮，来者犹可追也！已而已而，今之从政者殆而！」丘下，欲与之言。趋而去，弗得与之言。",
+      "echoAnalectsIds": [
+        "18.5"
+      ]
+    },
+    {
+      "id": "exp_18",
+      "lifeStage": "return",
+      "title": "十四岁而反鲁",
+      "shijiaSection": "ai_gong",
+      "sourceText": "會季康子逐公華、公賓、公林，以幣迎孔子，孔子歸魯。孔子之去魯凡十四歲而反乎魯。然魯終不能用孔子，孔子亦不求仕。",
+      "monologue": "会季康子逐公华、公宾、公林，以币迎丘，丘归鲁。丘之去鲁凡十四岁而反乎鲁。然鲁终不能用丘，丘亦不求仕。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_19",
+      "lifeStage": "return",
+      "title": "韦编三绝",
+      "shijiaSection": "return_lu",
+      "sourceText": "孔子晚而喜《易》，序彖、繫、象、說卦、文言。讀易，韋編三絕。曰：「假我數年，若是，我於易則彬彬矣。」",
+      "monologue": "丘晚而喜《易》，序彖、系、象、说卦、文言。读易，韦编三绝。曰：「假我数年，若是，我于易则彬彬矣。」",
+      "echoAnalectsIds": [
+        "7.17"
+      ]
+    },
+    {
+      "id": "exp_20",
+      "lifeStage": "return",
+      "title": "弟子三千",
+      "shijiaSection": "return_lu",
+      "sourceText": "孔子以詩書禮樂敎，弟子蓋三千焉，身通六藝者七十有二人。如顏濁鄒之徒，頗受業者甚衆。",
+      "monologue": "丘以诗书礼乐教，弟子盖三千焉，身通六艺者七十有二人。如颜浊邹之徒，颇受业者甚众。",
+      "echoAnalectsIds": [
+        "7.25"
+      ]
+    },
+    {
+      "id": "exp_21",
+      "lifeStage": "late",
+      "title": "获麟道穷",
+      "shijiaSection": "return_lu",
+      "sourceText": "魯哀公十四年春，狩大野。叔孫氏車子鉏商獲獸，以為不祥。仲尼視之，曰：「麟也。」取之。曰：「河不出圖，雒不出書，吾已矣夫！」顏淵死，孔子曰：「天喪予！」及西狩見麟，曰：「吾道窮矣！」",
+      "monologue": "鲁哀公十四年春，狩大野。叔孙氏车子鉏商获兽，以为不祥。丘视之，曰：「麟也。」取之。曰：「河不出图，雒不出书，吾已矣夫！」颜渊死，丘曰：「天丧予！」及西狩见麟，曰：「吾道穷矣！」",
+      "echoAnalectsIds": [
+        "9.9"
+      ]
+    },
+    {
+      "id": "exp_22",
+      "lifeStage": "late",
+      "title": "回死天丧予",
+      "shijiaSection": "return_lu",
+      "sourceText": "顏淵死，孔子曰：「天喪予！」",
+      "monologue": "颜渊死，丘曰：「天丧予！」",
+      "echoAnalectsIds": [
+        "11.9"
+      ]
+    },
+    {
+      "id": "exp_23",
+      "lifeStage": "late",
+      "title": "作春秋",
+      "shijiaSection": "return_lu",
+      "sourceText": "乃因史記作春秋，上至隱公，下訖哀公十四年，十二公。至於為春秋，筆則筆，削則削，子夏之徒不能贊一辭。弟子受春秋，孔子曰：「後世知丘者以春秋，而罪丘者亦以春秋。」",
+      "monologue": "乃因史记作春秋，上至隐公，下讫哀公十四年，十二公。至于为春秋，笔则笔，削则削，子夏之徒不能赞一辞。弟子受春秋，丘曰：「后世知丘者以春秋，而罪丘者亦以春秋。」",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_24",
+      "lifeStage": "late",
+      "title": "子路死于卫",
+      "shijiaSection": "return_lu",
+      "sourceText": "明歲，子路死於衞。",
+      "monologue": "明岁，子路死于卫。",
+      "echoAnalectsIds": []
+    },
+    {
+      "id": "exp_25",
+      "lifeStage": "late",
+      "title": "病中歌泰山坏",
+      "shijiaSection": "return_lu",
+      "sourceText": "孔子病，子貢請見。孔子方負杖逍遙於門，曰：「賜，汝來何其晚也？」孔子因歎，歌曰：「太山壞乎！梁柱摧乎！哲人萎乎！」因以涕下。謂子貢曰：「天下無道久矣，莫能宗予。」",
+      "monologue": "丘病，子贡请见。丘方负杖逍遥于门，曰：「赐，汝来何其晚也？」丘因叹，歌曰：「太山坏乎！梁柱摧乎！哲人萎乎！」因以涕下。谓子贡曰：「天下无道久矣，莫能宗予。」",
+      "echoAnalectsIds": []
+    }
+  ]
+}

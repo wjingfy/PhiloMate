@@ -1,0 +1,39 @@
+{
+  "version": "snack_gift_flow_v2",
+  "status": "approved",
+  "description": "用户赠送零食 → 当场评价；回赠延后展示（仅食物，不附纸条）。回赠概率相对好感度档位原表全部砍半。",
+  "gift": {
+    "action": "用户向当前哲学家赠送零食（可批量，受该哲学家当日好感 +20 上限约束）",
+    "immediate": "PM 当场给出固定评价（见各哲学家 snack_evaluations）",
+    "score": "每送 1 个 G3 +1；种类只影响评价，不影响分值",
+    "dailyClaim": "每个零食日登录随机领 1 个；零食日界为每日 4:00（0:00–4:00 仍属前一日）"
+  },
+  "returnGift": {
+    "rollWhen": "赠送成功当时；批量赠送时每个零食各自独立掷骰",
+    "rollHit": "每命中 1 次，向待领取队列追加 1 条回赠食物，不当场弹出",
+    "queue": "可囤多条；单次赠 N 个且掷中 M 次（M≤N）→ 队列 +M；与既往未领条目累加",
+    "deliverWhen": "用户进入该哲学家界面时：若队列非空，必须开始领取（一进界面就走，不能跳过）",
+    "conflictWithWastepaper": "若与废纸团掉落同时：先废纸团，关闭后再进入回赠队列流程",
+    "uiSingle": [
+      "① 提示：课桌下伸来{哲学家名字}的手！",
+      "② 点击任意处 → 出现回赠食物",
+      "③ 再点击任意处 → 收下并关闭"
+    ],
+    "uiChain": "队列剩余 ≥1 时：步骤③关闭后，自动开始下一条，从①「课桌下伸来…的手！」起再走完整流程，直到队列清空"
+  },
+  "returnProbabilityByTier": {
+    "note": "相对原表（档外0 / 20 / 40 / 60 / 80 / 100）全部砍半",
+    "tiers": [
+      { "tier": 0, "score": "<20", "probability": 0.0 },
+      { "tier": 1, "score": "20–39", "probability": 0.1 },
+      { "tier": 2, "score": "40–59", "probability": 0.2 },
+      { "tier": 3, "score": "60–79", "probability": 0.3 },
+      { "tier": 4, "score": "80–99", "probability": 0.4 },
+      { "tier": 5, "score": "100–110", "probability": 0.5 }
+    ]
+  },
+  "heartNote": {
+    "status": "cancelled",
+    "attach": "不再附折成爱心的纸条"
+  }
+}

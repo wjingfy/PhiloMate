@@ -1,0 +1,23 @@
+{
+  "philosopherId": "socrates",
+  "items": [
+    {
+      "id": "socrates_diluted_wine",
+      "name": "兑了水的淡酒",
+      "source": "《会饮篇》：既然大家决定随意饮酒，不加勉强……我们还是用谈论来消遣这次聚会的时光。",
+      "note": "回赠用；评语见 snack_evaluations 同 id。"
+    },
+    {
+      "id": "socrates_fig",
+      "name": "无花果",
+      "source": "《理想国》：那我若想知道什么是正义，就得从这“猪仔的城邦”里找。雅典常馈水果。",
+      "note": ""
+    },
+    {
+      "id": "socrates_know_thyself_bread",
+      "name": "认识你自己烤面包",
+      "source": "《斐德罗篇》：不去探究这些神话，而是探究我自己。γνῶθι σεαυτόν。",
+      "note": "展示名可用：用橄榄油写着认识你自己的烤面包。"
+    }
+  ]
+}

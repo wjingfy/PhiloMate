@@ -1,0 +1,34 @@
+{
+  "version": 3.0,
+  "philosopherId": "foucault",
+  "_说明": "flatList = 三语料包实际挂过的 category key（DP 六个福柯概念范畴 + HS 雷韦尔辞典概念）；带语义的标注参考词表见原工作区 categories_vocabulary.json（DP v2.0）、sexuality-categories_vocabulary.json（HS v2.0）。",
+  "flatList": [
+    "权力-知识",
+    "驯顺的肉体",
+    "规训",
+    "规范化",
+    "考核/检查",
+    "全景敞视主义",
+    "性经验装置",
+    "坦白/忏悔",
+    "人口",
+    "性态",
+    "生命权力",
+    "快感的享用",
+    "伦理实体",
+    "主体化",
+    "自我技术",
+    "生活艺术",
+    "养生法",
+    "自我关怀",
+    "精神修炼"
+  ],
+  "overlapWithThemes": [
+    "规训",
+    "规范化",
+    "考核/检查",
+    "全景敞视主义",
+    "主体化",
+    "性态"
+  ]
+}

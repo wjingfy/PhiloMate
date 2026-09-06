@@ -1,0 +1,112 @@
+{
+  "version": "snack_evaluations_v3",
+  "philosopherId": "socrates",
+  "status": "draft",
+  "description": "用户赠送零食时的固定评语。须覆盖零食总表全部 id。先谢后评，种类不影响好感分值。",
+  "rules": {
+    "fixed": true,
+    "followSentenceOrganization": true,
+    "mustThank": true,
+    "scoreImpact": "种类不影响好感分值，仅影响本回应"
+  },
+  "evaluations": [
+    {
+      "snackId": "spicy_stick",
+      "preference": "dislike",
+      "attitudeHint": 2,
+      "anchor": "辛烈过刺激",
+      "text": "谢谢你分我这截又红又麻的东西。舌头先喊过瘾，过一会儿又喊烧。一件事能让身体同时点头和摇头，倒适合拿来问：快感是不是已经把尺度交给了刺激。"
+    },
+    {
+      "snackId": "rouxsong_xiaobei",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "两味捏一口",
+      "text": "谢谢。外面甜软，里头咸香，一口就把两套味道捏在一起。雅典的点心没这么会打扮。我只问一句：你喜欢它，是喜欢那层糖，还是喜欢那口肉？"
+    },
+    {
+      "snackId": "beef_jerky",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "行军口粮、耐嚼",
+      "text": "谢谢这干巴巴却耐嚼的礼物。像行军时揣着的口粮——不华丽，能走远。我感谢的是你还记得给我嘴里留一点实在的东西。"
+    },
+    {
+      "snackId": "chocolate",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "先苦后甜",
+      "text": "谢谢。这东西苦尽了才甜，顺序倒像某些辩论：先涩，后才有回味。若一上来就甜得发腻，我反而不知道自己吃到了什么。"
+    },
+    {
+      "snackId": "boxed_milk",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "方便格子里的营养",
+      "text": "谢谢你这盒白的、凉的。像把一只羊的好处关进了规矩的格子里。方便是方便，我仍想问：方便之后，我们还记不记得它原来是什么。"
+    },
+    {
+      "snackId": "socrates_diluted_wine",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "会饮篇：饮酒不强，以谈论消遣",
+      "text": "谢谢这杯兑了水的淡酒。宴上本不必比酒量，淡了才好把话比清楚。你肯分我，我受着。"
+    },
+    {
+      "snackId": "socrates_fig",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "理想国：从朴素城邦生活里问正义",
+      "text": "谢谢这无花果。朴素、常见，雅典路上最多。问正义时，往往得从最平常的日子里找，不从排场里找。"
+    },
+    {
+      "snackId": "socrates_know_thyself_bread",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "斐德罗篇：探究自己 / 认识你自己",
+      "text": "谢谢这块写着认识你自己的烤面包。字在面上，问在心里。我受你的面包，也受这句提醒。"
+    },
+    {
+      "snackId": "wang_mountain_tea",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "清而不空",
+      "text": "谢谢这杯新茶。水是活的，叶子也是刚下来的。清，不等于空。我喝着，倒想起：有些话也该像茶，烫过、沉过，再端给别人。"
+    },
+    {
+      "snackId": "wang_longchang_fern",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "荒野分来",
+      "text": "谢谢你采来的这把山蕨。它长在人少的地方，却被人翻过山去找。我不知道它的土，只知道你愿意把一份荒野分给我。这比味道先到。"
+    },
+    {
+      "snackId": "wang_liangnong_cake",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "知与行、要咬要做",
+      "text": "谢谢这块糕。听说有人拿它配着讲知与行。糕是要咬的，理是要做的。我先谢你喂了我一口，再问：这口若只停在舌头上，算不算已经“知”了？"
+    },
+    {
+      "snackId": "foucault_french_basket",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "三物并置、各是其是",
+      "text": "谢谢你这篮像远方餐桌的东西。面包、奶、酒并排放着，像三种不同的够用。我想念的从来不是排场，是一样东西还肯是它自己。"
+    },
+    {
+      "snackId": "foucault_sandwich_cola",
+      "preference": "dislike",
+      "attitudeHint": 2,
+      "anchor": "乐趣清楚却可能问掉还缺什么",
+      "text": "谢谢这套吃了就能上路的搭配。一层夹着一层，气泡又把嘴里弄得喧闹。乐趣很清楚。我只担心清楚的乐趣，有时会替我们把“还缺什么”问掉。"
+    },
+    {
+      "snackId": "foucault_black_coffee",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "苦能续干、苦不等于智慧",
+      "text": "谢谢这杯苦的。它不负责安慰，只负责让人接着干。我尊敬苦，但不把苦当成智慧的证明——苦过，仍要问自己在苦什么。"
+    }
+  ]
+}

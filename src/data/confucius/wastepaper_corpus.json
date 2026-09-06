@@ -1,0 +1,446 @@
+{
+  "version": "wastepaper_corpus_v2_curated",
+  "philosopher": "confucius",
+  "canonicalSource": "analects_canonical.json",
+  "sourceDraft": "wastepaper_types_draft.json",
+  "status": "curated_40_60",
+  "scheme": "B",
+  "description": "为对齐各哲废纸团体量，自 full_v1（326）精简为 60 条：①30 / ②30。去留：①取可独立成念、好懂、气质鲜明且主题分散的断言；近义只留一条；过长/冷僻/缺画面感先砍。②原 30 条私记感已强，全部保留。全量备份见 wastepaper_corpus_full_v1.json。",
+  "curatedAt": "2026-08-16",
+  "rules": [
+    "只取「子曰」引号内",
+    "叙事嵌套 / 缺背景碎片 / 非子曰问句 → 排除",
+    "类型一：他人他物断言；类型二：私人陈述",
+    "v2 体量对齐：总条约 40–60；①②各半",
+    "全量原稿：wastepaper_corpus_full_v1.json"
+  ],
+  "exportedAt": "2026-07-13T15:28:54.109Z",
+  "summary": {
+    "total": 60,
+    "type1": 30,
+    "type2": 30,
+    "previousTotal": 326
+  },
+  "entries": [
+    {
+      "id": "1.1",
+      "sourceId": "1.1",
+      "quoteIndex": 0,
+      "quote": "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？",
+      "wastepaperType": 1
+    },
+    {
+      "id": "1.3",
+      "sourceId": "1.3",
+      "quoteIndex": 0,
+      "quote": "巧言令色，鲜矣仁！",
+      "wastepaperType": 1
+    },
+    {
+      "id": "1.16",
+      "sourceId": "1.16",
+      "quoteIndex": 0,
+      "quote": "不患人之不己知，患不知人也。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "2.1",
+      "sourceId": "2.1",
+      "quoteIndex": 0,
+      "quote": "为政以德，譬如北辰，居其所而众星共之。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "2.11",
+      "sourceId": "2.11",
+      "quoteIndex": 0,
+      "quote": "温故而知新，可以为师矣。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "2.12",
+      "sourceId": "2.12",
+      "quoteIndex": 0,
+      "quote": "君子不器。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "2.15",
+      "sourceId": "2.15",
+      "quoteIndex": 0,
+      "quote": "学而不思则罔，思而不学则殆。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "2.17",
+      "sourceId": "2.17",
+      "quoteIndex": 0,
+      "quote": "由，诲汝知之乎！知之为知之，不知为不知，是知也。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "4.8",
+      "sourceId": "4.8",
+      "quoteIndex": 0,
+      "quote": "朝闻道，夕死可矣。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "4.16",
+      "sourceId": "4.16",
+      "quoteIndex": 0,
+      "quote": "君子喻于义，小人喻于利。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "4.17",
+      "sourceId": "4.17",
+      "quoteIndex": 0,
+      "quote": "见贤思齐焉，见不贤而内自省也。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "4.25",
+      "sourceId": "4.25",
+      "quoteIndex": 0,
+      "quote": "德不孤，必有邻。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "5.10#1",
+      "sourceId": "5.10",
+      "quoteIndex": 1,
+      "quote": "始吾于人也，听其言而信其行；今吾于人也，听其言而观其行。于予与改是。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "6.18",
+      "sourceId": "6.18",
+      "quoteIndex": 0,
+      "quote": "质胜文则野，文胜质则史。文质彬彬，然后君子。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "6.20",
+      "sourceId": "6.20",
+      "quoteIndex": 0,
+      "quote": "知之者不如好之者；好之者不如乐之者。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "6.23",
+      "sourceId": "6.23",
+      "quoteIndex": 0,
+      "quote": "知者乐水，仁者乐山。知者动，仁者静。知者乐，仁者寿。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "7.6",
+      "sourceId": "7.6",
+      "quoteIndex": 0,
+      "quote": "志于道，据于德，依于仁，游于艺。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "7.8",
+      "sourceId": "7.8",
+      "quoteIndex": 0,
+      "quote": "不愤不启，不悱不发，举一隅不以三隅反，则不复也。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "7.22",
+      "sourceId": "7.22",
+      "quoteIndex": 0,
+      "quote": "三人行，必有我师焉。择其善者而从之，其不善者而改之。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "7.30",
+      "sourceId": "7.30",
+      "quoteIndex": 0,
+      "quote": "仁远乎哉？我欲仁，斯仁至矣。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "7.37",
+      "sourceId": "7.37",
+      "quoteIndex": 0,
+      "quote": "君子坦荡荡，小人长戚戚。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "8.8",
+      "sourceId": "8.8",
+      "quoteIndex": 0,
+      "quote": "兴于《诗》，立于礼，成于乐。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "9.26",
+      "sourceId": "9.26",
+      "quoteIndex": 0,
+      "quote": "三军可夺帅也，匹夫不可夺志也。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "9.28",
+      "sourceId": "9.28",
+      "quoteIndex": 0,
+      "quote": "岁寒，然后知松柏之后凋也。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "9.29",
+      "sourceId": "9.29",
+      "quoteIndex": 0,
+      "quote": "知者不惑，仁者不忧，勇者不惧。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "12.1#0",
+      "sourceId": "12.1",
+      "quoteIndex": 0,
+      "quote": "克己复礼为仁。一日克己复礼，天下归仁焉。为仁由己，而由人乎哉？",
+      "wastepaperType": 1
+    },
+    {
+      "id": "13.6",
+      "sourceId": "13.6",
+      "quoteIndex": 0,
+      "quote": "其身正，不令而行；其身不正，虽令不从。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "13.23",
+      "sourceId": "13.23",
+      "quoteIndex": 0,
+      "quote": "君子和而不同，小人同而不和。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "15.24",
+      "sourceId": "15.24",
+      "quoteIndex": 0,
+      "quote": "其恕乎！己所不欲，勿施于人。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "15.39",
+      "sourceId": "15.39",
+      "quoteIndex": 0,
+      "quote": "有教无类。",
+      "wastepaperType": 1
+    },
+    {
+      "id": "2.4",
+      "sourceId": "2.4",
+      "quoteIndex": 0,
+      "quote": "吾十有五而志于学，三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲，不逾矩。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "2.9",
+      "sourceId": "2.9",
+      "quoteIndex": 0,
+      "quote": "吾与回言终日，不违，如愚。退而省其私，亦足以发，回也不愚。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "5.7#0",
+      "sourceId": "5.7",
+      "quoteIndex": 0,
+      "quote": "道不行，乘桴浮于海，从我者其由与？",
+      "wastepaperType": 2
+    },
+    {
+      "id": "5.7#1",
+      "sourceId": "5.7",
+      "quoteIndex": 1,
+      "quote": "由也好勇过我，无所取材。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "6.11",
+      "sourceId": "6.11",
+      "quoteIndex": 0,
+      "quote": "贤哉回也！一箪食，一瓢饮，在陋巷，人不堪其忧，回也不改其乐。贤哉，回也！",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.5",
+      "sourceId": "7.5",
+      "quoteIndex": 0,
+      "quote": "甚矣吾衰也！久矣吾不复梦见周公。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.16",
+      "sourceId": "7.16",
+      "quoteIndex": 0,
+      "quote": "饭疏食饮水，曲肱而枕之，乐亦在其中矣。不义而富且贵，于我如浮云。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.17",
+      "sourceId": "7.17",
+      "quoteIndex": 0,
+      "quote": "加我数年，五十以学《易》，可以无大过矣。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.19",
+      "sourceId": "7.19",
+      "quoteIndex": 0,
+      "quote": "其为人也，发愤忘食，乐以忘忧，不知老之将至云尔。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.23",
+      "sourceId": "7.23",
+      "quoteIndex": 0,
+      "quote": "天生德于予，桓魋其如予何？",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.24",
+      "sourceId": "7.24",
+      "quoteIndex": 0,
+      "quote": "二三子以我为隐乎？吾无隐乎尔！吾无行而不与二三子者，是丘也。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.26#0",
+      "sourceId": "7.26",
+      "quoteIndex": 0,
+      "quote": "圣人，吾不得而见之矣；得见君子者斯可矣。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.26#1",
+      "sourceId": "7.26",
+      "quoteIndex": 1,
+      "quote": "善人，吾不得而见之矣，得见有恒者斯可矣。亡而为有，虚而为盈，约而为泰，难乎有恒乎。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.33",
+      "sourceId": "7.33",
+      "quoteIndex": 0,
+      "quote": "文，莫吾犹人也。躬行君子，则吾未之有得。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "7.34",
+      "sourceId": "7.34",
+      "quoteIndex": 0,
+      "quote": "若圣与仁，则吾岂敢？抑为之不厌，诲人不倦，则可谓云尔已矣。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "9.9",
+      "sourceId": "9.9",
+      "quoteIndex": 0,
+      "quote": "凤鸟不至，河不出图，吾已矣夫！",
+      "wastepaperType": 2
+    },
+    {
+      "id": "9.13",
+      "sourceId": "9.13",
+      "quoteIndex": 0,
+      "quote": "沽之哉，沽之哉！我待贾者也。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "9.15",
+      "sourceId": "9.15",
+      "quoteIndex": 0,
+      "quote": "吾自卫反鲁，然后乐正，《雅》、《颂》各得其所。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "9.20",
+      "sourceId": "9.20",
+      "quoteIndex": 0,
+      "quote": "语之而不惰者，其回也与！",
+      "wastepaperType": 2
+    },
+    {
+      "id": "11.2",
+      "sourceId": "11.2",
+      "quoteIndex": 0,
+      "quote": "从我于陈、蔡者，皆不及门也。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "11.4",
+      "sourceId": "11.4",
+      "quoteIndex": 0,
+      "quote": "回也非助我者也，于吾言无所不说。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "11.8",
+      "sourceId": "11.8",
+      "quoteIndex": 0,
+      "quote": "才不才，亦各言其子也。鲤也死，有棺而无椁，吾不徒行以为之椁。以吾从大夫之后，不可徒行也。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "11.9",
+      "sourceId": "11.9",
+      "quoteIndex": 0,
+      "quote": "噫！天丧予！天丧予！",
+      "wastepaperType": 2
+    },
+    {
+      "id": "11.19",
+      "sourceId": "11.19",
+      "quoteIndex": 0,
+      "quote": "回也其庶乎，屡空。赐不受命而货殖焉，亿则屡中。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "14.28",
+      "sourceId": "14.28",
+      "quoteIndex": 0,
+      "quote": "君子道者三，我无能焉：仁者不忧，知者不惑，勇者不惧。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "14.29",
+      "sourceId": "14.29",
+      "quoteIndex": 0,
+      "quote": "赐也贤乎哉？夫我则不暇。",
+      "wastepaperType": 2
+    },
+    {
+      "id": "14.35#0",
+      "sourceId": "14.35",
+      "quoteIndex": 0,
+      "quote": "莫我知也夫！",
+      "wastepaperType": 2
+    },
+    {
+      "id": "14.35#1",
+      "sourceId": "14.35",
+      "quoteIndex": 1,
+      "quote": "不怨天，不尤人，下学而上达。知我者其天乎！",
+      "wastepaperType": 2
+    },
+    {
+      "id": "17.5",
+      "sourceId": "17.5",
+      "quoteIndex": 0,
+      "quote": "夫召我者而岂徒哉？如有用我者，吾其为东周乎！",
+      "wastepaperType": 2
+    },
+    {
+      "id": "17.7",
+      "sourceId": "17.7",
+      "quoteIndex": 0,
+      "quote": "不曰坚乎，磨而不磷；不曰白乎，涅而不缁。吾岂匏瓜也哉？焉能系而不食？",
+      "wastepaperType": 2
+    }
+  ]
+}

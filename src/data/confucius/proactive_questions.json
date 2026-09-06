@@ -1,0 +1,614 @@
+{
+  "version": "proactive_questions_v1.7",
+  "philosopher": "confucius",
+  "status": "single_ask_v1; setup_both_poles; voice_org_s1",
+  "description": "开屏主动发言 · 哲学提问库。theme × category 适配；每 theme 1–3 题；半文半白、论语口吻；成句见 sentence_organization §一。",
+  "rules": [
+    "每条仅一问：一个问号或一个二者择一；前面可有一句铺垫/引典，勿连环追问（勿两问叠问）",
+    "若问中对比二者（如野与史、罔与殆），铺垫须交代双方各是什么；不可只释一端却问两端",
+    "仅覆盖 A/B 层 theme；C 层（怪力乱神、鬼神、饮食、丧祭、战刑、小人等）不入池",
+    "每条一个主 theme + 一个 category 透镜",
+    "每 theme 最少 1 题、最多 3 题",
+    "同一提问内多个分句须使用同一语气词（乎/与/哉等）",
+    "语体半文半白，读来像孔子在问；汝/女能省则省；禁破折号、省略号、直角引号、分号；以逗号、句号断短句；一眼可读；勿缩句电报腔；嵌典开引不拆",
+    "抽取时生成提问实例；同一 questionText 再次出现视为新实例，可再计 G4"
+  ],
+  "tiers": {
+    "A": [
+      "仁",
+      "义",
+      "礼",
+      "智",
+      "信",
+      "学",
+      "孝",
+      "悌",
+      "友",
+      "忠",
+      "恕",
+      "君子",
+      "过",
+      "改",
+      "耻",
+      "勇",
+      "敬",
+      "慎"
+    ],
+    "B": [
+      "政",
+      "命",
+      "天",
+      "道",
+      "德",
+      "文/质",
+      "和",
+      "乐",
+      "怨",
+      "利",
+      "名",
+      "贫",
+      "富",
+      "省察",
+      "欲/理",
+      "长/幼",
+      "故/新",
+      "善",
+      "圣人",
+      "爱"
+    ]
+  },
+  "summary": {
+    "total": 78,
+    "tierA": 37,
+    "tierB": 41,
+    "themes": 39
+  },
+  "entries": [
+    {
+      "id": "q_ren_01",
+      "tier": "A",
+      "theme": "仁",
+      "category": "本/末",
+      "question": "或曰孝弟为仁之本。仁之本，果在是与？"
+    },
+    {
+      "id": "q_ren_02",
+      "tier": "A",
+      "theme": "仁",
+      "category": "内/外",
+      "question": "其为仁也，存诸心而足，与见于事乃称，何取？"
+    },
+    {
+      "id": "q_ren_03",
+      "tier": "A",
+      "theme": "仁",
+      "category": "人/己",
+      "question": "近仁者，爱人与克己，将安从？"
+    },
+    {
+      "id": "q_yi_01",
+      "tier": "A",
+      "theme": "义",
+      "category": "得/失",
+      "question": "行义而有所丧，与苟得而害义，孰尤不可？"
+    },
+    {
+      "id": "q_yi_02",
+      "tier": "A",
+      "theme": "义",
+      "category": "人/己",
+      "question": "义也者，施于人与守诸己，孰取？"
+    },
+    {
+      "id": "q_li_01",
+      "tier": "A",
+      "theme": "礼",
+      "category": "文/质",
+      "question": "礼徒具文而丧其质，尚可谓礼乎？"
+    },
+    {
+      "id": "q_li_02",
+      "tier": "A",
+      "theme": "礼",
+      "category": "体/用",
+      "question": "礼之用，和为贵。和者，果礼之所向与？"
+    },
+    {
+      "id": "q_li_03",
+      "tier": "A",
+      "theme": "礼",
+      "category": "过度/不及/适度",
+      "question": "礼也者，过则近伪，不及近野。野与伪，孰尤易蹈？"
+    },
+    {
+      "id": "q_zhi_02",
+      "tier": "A",
+      "theme": "智",
+      "category": "名/实",
+      "question": "智者之称，以多闻与以能辨，孰先？"
+    },
+    {
+      "id": "q_xin_01",
+      "tier": "A",
+      "theme": "信",
+      "category": "名/实",
+      "question": "言必信，行必果。所信非义，信其立乎？"
+    },
+    {
+      "id": "q_xin_02",
+      "tier": "A",
+      "theme": "信",
+      "category": "人/己",
+      "question": "信友之诺与信己之诺，孰难践？"
+    },
+    {
+      "id": "q_xue_01",
+      "tier": "A",
+      "theme": "学",
+      "category": "知/不知",
+      "question": "学而不思则罔，思而不学则殆。罔与殆，近于孰？"
+    },
+    {
+      "id": "q_xue_02",
+      "tier": "A",
+      "theme": "学",
+      "category": "本/末",
+      "question": "学以求用与学以成己，本末安在？"
+    },
+    {
+      "id": "q_xue_03",
+      "tier": "A",
+      "theme": "学",
+      "category": "常/变",
+      "question": "温故而知新。故常与新变，何以相生？"
+    },
+    {
+      "id": "q_xiao_01",
+      "tier": "A",
+      "theme": "孝",
+      "category": "本/末",
+      "question": "今之孝者，是谓能养。孝止于养，可乎？"
+    },
+    {
+      "id": "q_xiao_02",
+      "tier": "A",
+      "theme": "孝",
+      "category": "人/己",
+      "question": "其为孝也，从亲之望与循子所当，二者相牾，将安出？"
+    },
+    {
+      "id": "q_ti_01",
+      "tier": "A",
+      "theme": "悌",
+      "category": "过度/不及/适度",
+      "question": "悌在长幼。恭而疏与昵而无序，如之何持中？"
+    },
+    {
+      "id": "q_you_02",
+      "tier": "A",
+      "theme": "友",
+      "category": "合/离",
+      "question": "可与共学，未可与适道。友道之界，当画于何所？"
+    },
+    {
+      "id": "q_zhong_01",
+      "tier": "A",
+      "theme": "忠",
+      "category": "内/外",
+      "question": "其为忠也，尽其心而足，与成其事乃称，孰先？"
+    },
+    {
+      "id": "q_zhong_02",
+      "tier": "A",
+      "theme": "忠",
+      "category": "人/己",
+      "question": "为人谋，而所谋非己所安，忠将何以尽？"
+    },
+    {
+      "id": "q_shu_01",
+      "tier": "A",
+      "theme": "恕",
+      "category": "人/己",
+      "question": "己所不欲，勿施于人。行恕，推己及人与忘己及人，何先？"
+    },
+    {
+      "id": "q_shu_02",
+      "tier": "A",
+      "theme": "恕",
+      "category": "过度/不及/适度",
+      "question": "恕过则近乡愿，不及则近苛。过与不及，其难在孰？"
+    },
+    {
+      "id": "q_junzi_01",
+      "tier": "A",
+      "theme": "君子",
+      "category": "名/实",
+      "question": "君子之名易，其实难。今之君子，名浮于实者众与？"
+    },
+    {
+      "id": "q_junzi_02",
+      "tier": "A",
+      "theme": "君子",
+      "category": "内/外",
+      "question": "君子求诸己。所求者，内德与外誉，何先？"
+    },
+    {
+      "id": "q_junzi_03",
+      "tier": "A",
+      "theme": "君子",
+      "category": "文/质",
+      "question": "文胜则史，质胜则野。史与野，孰去君子更远？"
+    },
+    {
+      "id": "q_guo_01",
+      "tier": "A",
+      "theme": "过",
+      "category": "知/不知",
+      "question": "人于己过，昧而不察与知而文之，孰众？"
+    },
+    {
+      "id": "q_guo_02",
+      "tier": "A",
+      "theme": "过",
+      "category": "隐/显",
+      "question": "小人之过也必文。文过者，欲隐其过与欲拒其改，孰尤近？"
+    },
+    {
+      "id": "q_gai_01",
+      "tier": "A",
+      "theme": "改",
+      "category": "潜能/现实",
+      "question": "过则勿惮改。惮改者，无力改，与知当改而未改，孰尤足忧？"
+    },
+    {
+      "id": "q_gai_02",
+      "tier": "A",
+      "theme": "改",
+      "category": "常/变",
+      "question": "人孰无过。可常者，能改与寡过，孰取？"
+    },
+    {
+      "id": "q_chi_01",
+      "tier": "A",
+      "theme": "耻",
+      "category": "内/外",
+      "question": "行己有耻。耻也者，生于人言与生于己心，安在？"
+    },
+    {
+      "id": "q_chi_02",
+      "tier": "A",
+      "theme": "耻",
+      "category": "人/己",
+      "question": "士志于道，而耻恶衣恶食者，未足与议也。所当耻者，衣食之恶与道之不行，孰取？"
+    },
+    {
+      "id": "q_yong_01",
+      "tier": "A",
+      "theme": "勇",
+      "category": "过度/不及/适度",
+      "question": "暴虎冯河，勇之过。见义不为，勇之不及。过与不及，世所见孰多？"
+    },
+    {
+      "id": "q_yong_02",
+      "tier": "A",
+      "theme": "勇",
+      "category": "知/不知",
+      "question": "知耻近乎勇。其为勇也，无惧而往与知惧而赴，将安从？"
+    },
+    {
+      "id": "q_jing_01",
+      "tier": "A",
+      "theme": "敬",
+      "category": "内/外",
+      "question": "貌恭而心驰，可谓敬乎？"
+    },
+    {
+      "id": "q_jing_02",
+      "tier": "A",
+      "theme": "敬",
+      "category": "人/己",
+      "question": "敬人与敬事，孰为本？"
+    },
+    {
+      "id": "q_shen_01",
+      "tier": "A",
+      "theme": "慎",
+      "category": "动/静",
+      "question": "敏于事而慎于言。所谓慎者，在静处以敛，与在临事以敛，将奚择？"
+    },
+    {
+      "id": "q_shen_02",
+      "tier": "A",
+      "theme": "慎",
+      "category": "过度/不及/适度",
+      "question": "慎过则事沮，不及则轻发。过与不及，近于孰？"
+    },
+    {
+      "id": "q_zheng_01",
+      "tier": "B",
+      "theme": "政",
+      "category": "本/末",
+      "question": "为政以德。政之本，在德与在制，安从？"
+    },
+    {
+      "id": "q_zheng_02",
+      "tier": "B",
+      "theme": "政",
+      "category": "名/实",
+      "question": "必也正名乎。正名者，正其名与正其实，何先？"
+    },
+    {
+      "id": "q_ming_tian_01",
+      "tier": "B",
+      "theme": "命",
+      "category": "必/偶",
+      "question": "死生有命，富贵在天。人事之间，必与偶，其界安在？"
+    },
+    {
+      "id": "q_ming_tian_02",
+      "tier": "B",
+      "theme": "命",
+      "category": "知/不知",
+      "question": "不知命，无以为君子。其知命也，止于安命与知止有为，将安从？"
+    },
+    {
+      "id": "q_tian_01",
+      "tier": "B",
+      "theme": "天",
+      "category": "自然/人为",
+      "question": "四时行焉，百物生焉。天之所运与人之所造，其界安在？"
+    },
+    {
+      "id": "q_tian_02",
+      "tier": "B",
+      "theme": "天",
+      "category": "知/不知",
+      "question": "五十而知天命。其知天也，知天之必然，与知己之不可强，果何如？"
+    },
+    {
+      "id": "q_dao_01",
+      "tier": "B",
+      "theme": "道",
+      "category": "常/变",
+      "question": "道若因时而变，其所不移者何哉？"
+    },
+    {
+      "id": "q_dao_02",
+      "tier": "B",
+      "theme": "道",
+      "category": "人/己",
+      "question": "人能弘道，非道弘人。道不行于世，因道远于人，与因人远于道，孰近实？"
+    },
+    {
+      "id": "q_dao_03",
+      "tier": "B",
+      "theme": "道",
+      "category": "本/末",
+      "question": "本立而道生。本谓德行，果在是与？"
+    },
+    {
+      "id": "q_de_01",
+      "tier": "B",
+      "theme": "德",
+      "category": "隐/显",
+      "question": "德之不修，是吾忧也。其为德也，成于隐微而足，与征诸事功乃称，孰尤近？"
+    },
+    {
+      "id": "q_de_02",
+      "tier": "B",
+      "theme": "德",
+      "category": "体/用",
+      "question": "德者，得也。所得，内有所据与外有所成，安从？"
+    },
+    {
+      "id": "q_wen_zhi_01",
+      "tier": "B",
+      "theme": "文/质",
+      "category": "文/质",
+      "question": "文胜质则史。文也者，所以润质与足以蔽质，孰近实？"
+    },
+    {
+      "id": "q_wen_zhi_02",
+      "tier": "B",
+      "theme": "文/质",
+      "category": "文/质",
+      "question": "质胜文则野，文胜质则史。野与史，孰尤足忧？"
+    },
+    {
+      "id": "q_he_01",
+      "tier": "B",
+      "theme": "和",
+      "category": "过度/不及/适度",
+      "question": "和而不同。和流而为同，犹和也与？"
+    },
+    {
+      "id": "q_he_02",
+      "tier": "B",
+      "theme": "和",
+      "category": "合/离",
+      "question": "礼之用，和为贵。和者，合众而一与各得其所，孰尤近？"
+    },
+    {
+      "id": "q_le_01",
+      "tier": "B",
+      "theme": "乐",
+      "category": "内/外",
+      "question": "知之不如好之，好之不如乐之。其为乐也，存于心而足，与共于人乃全，可两全与？"
+    },
+    {
+      "id": "q_le_02",
+      "tier": "B",
+      "theme": "乐",
+      "category": "得/失",
+      "question": "不义而富且贵，于我如浮云。所乐者，尝以有所丧易之乎？"
+    },
+    {
+      "id": "q_yuan_01",
+      "tier": "B",
+      "theme": "怨",
+      "category": "人/己",
+      "question": "不怨天，不尤人。怨之起，多因责人与多因咎己，孰众？"
+    },
+    {
+      "id": "q_yuan_02",
+      "tier": "B",
+      "theme": "怨",
+      "category": "收/放",
+      "question": "怨也者，蓄而不发与发而失当，伤己孰甚？"
+    },
+    {
+      "id": "q_li_利_01",
+      "tier": "B",
+      "theme": "利",
+      "category": "得/失",
+      "question": "君子喻于义，小人喻于利。见利，先问可得与当得，孰先？"
+    },
+    {
+      "id": "q_li_利_02",
+      "tier": "B",
+      "theme": "利",
+      "category": "人/己",
+      "question": "放于利而行，多怨。怨之生，求之太过与不计其人，孰尤近？"
+    },
+    {
+      "id": "q_ming_01",
+      "tier": "B",
+      "theme": "名",
+      "category": "名/实",
+      "question": "名之成，实至名归与名先实从，孰尤近君子？"
+    },
+    {
+      "id": "q_ming_02",
+      "tier": "B",
+      "theme": "名",
+      "category": "隐/显",
+      "question": "人不知而不愠。求名之心，见于辞色与隐于中心，孰尤近？"
+    },
+    {
+      "id": "q_pin_01",
+      "tier": "B",
+      "theme": "贫",
+      "category": "得/失",
+      "question": "贫而无怨难。贫之所丧易见，其所得果何在哉？"
+    },
+    {
+      "id": "q_pin_02",
+      "tier": "B",
+      "theme": "贫",
+      "category": "内/外",
+      "question": "君子固穷。所谓固穷，外穷而内守，与以穷自高，果何如？"
+    },
+    {
+      "id": "q_fu_01",
+      "tier": "B",
+      "theme": "富",
+      "category": "过度/不及/适度",
+      "question": "富而好礼。富之患，过而生骄与富而丧本，孰尤足忧？"
+    },
+    {
+      "id": "q_fu_02",
+      "tier": "B",
+      "theme": "富",
+      "category": "得/失",
+      "question": "不义而富，于我如浮云。义而富，可求与？"
+    },
+    {
+      "id": "q_xingcha_01",
+      "tier": "B",
+      "theme": "省察",
+      "category": "内/外",
+      "question": "吾日三省吾身。其省也，察诸内心与察己待人，孰为本？"
+    },
+    {
+      "id": "q_xingcha_02",
+      "tier": "B",
+      "theme": "省察",
+      "category": "知/不知",
+      "question": "省察之要，知其所不知，与知其已过，将奚先？"
+    },
+    {
+      "id": "q_yuli_01",
+      "tier": "B",
+      "theme": "欲/理",
+      "category": "过度/不及/适度",
+      "question": "欲而不贪。于欲也，可尽去与裁过而止，宁何先？"
+    },
+    {
+      "id": "q_yuli_02",
+      "tier": "B",
+      "theme": "欲/理",
+      "category": "人/己",
+      "question": "克己复礼为仁。所克，一己之欲与侵人之欲，安从？"
+    },
+    {
+      "id": "q_zhangyou_01",
+      "tier": "B",
+      "theme": "长/幼",
+      "category": "时",
+      "question": "长幼有序。其序也，因年位而定，与因德成而立，孰先？"
+    },
+    {
+      "id": "q_zhangyou_02",
+      "tier": "B",
+      "theme": "长/幼",
+      "category": "人/己",
+      "question": "敬长流于畏，爱幼流于溺。二者之失，孰易蹈？"
+    },
+    {
+      "id": "q_guxin_01",
+      "tier": "B",
+      "theme": "故/新",
+      "category": "常/变",
+      "question": "温故而知新。故常与新变，何以相生而不相贼？"
+    },
+    {
+      "id": "q_guxin_02",
+      "tier": "B",
+      "theme": "故/新",
+      "category": "本/末",
+      "question": "弃故唯新，与泥故不知新，本道之失，孰尤甚？"
+    },
+    {
+      "id": "q_shan_01",
+      "tier": "B",
+      "theme": "善",
+      "category": "潜能/现实",
+      "question": "见善如不及。其为善也，性固有而待充，与外有准而待合，孰近实？"
+    },
+    {
+      "id": "q_shan_02",
+      "tier": "B",
+      "theme": "善",
+      "category": "人/己",
+      "question": "乡愿，德之贼也。为善而求悦于众，是犹善与？"
+    },
+    {
+      "id": "q_shengren_01",
+      "tier": "B",
+      "theme": "圣人",
+      "category": "名/实",
+      "question": "若圣与仁，则吾岂敢。圣之名，后人所追与当世可指，安从？"
+    },
+    {
+      "id": "q_shengren_02",
+      "tier": "B",
+      "theme": "圣人",
+      "category": "知/不知",
+      "question": "所谓圣者，无所不知与知所不知，将安从？"
+    },
+    {
+      "id": "q_ai_01",
+      "tier": "B",
+      "theme": "爱",
+      "category": "过度/不及/适度",
+      "question": "爱过则近姑息，不及则近寡恩。过与不及，爱尤易失于何方？"
+    },
+    {
+      "id": "q_ai_02",
+      "tier": "B",
+      "theme": "爱",
+      "category": "人/己",
+      "question": "泛爱众而亲仁。欲免偏私，当均其爱与当差其等，将奚先？"
+    }
+  ]
+}

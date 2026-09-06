@@ -1,0 +1,75 @@
+{
+  "philosopherId": "wangyangming",
+  "evaluations": [
+    {
+      "snackId": "spicy_stick",
+      "preference": "like",
+      "text": "入口虽辣，却痛快得很，不觉额上见汗。汝肯分吾，这份心意比辣味还暖。谢了。"
+    },
+    {
+      "snackId": "rouxsong_xiaobei",
+      "preference": "like",
+      "text": "咸甜入口，松软化开，竟十分熨帖，做得有巧思。吾这山间老人，今日倒沾了汝的光。多谢。"
+    },
+    {
+      "snackId": "beef_jerky",
+      "preference": "like",
+      "text": "越嚼越香，最耐饥，行军之人囊中常备此物。多谢汝想着吾。"
+    },
+    {
+      "snackId": "chocolate",
+      "preference": "like",
+      "text": "微苦过后是回甘，须臾即化，滋味甚奇。多谢汝的好意。"
+    },
+    {
+      "snackId": "boxed_milk",
+      "preference": "like",
+      "text": "晨起饮之，通身俱润。装在这小小方盒里，倒是新奇。谢汝相赠。"
+    },
+    {
+      "snackId": "socrates_diluted_wine",
+      "preference": "like",
+      "text": "酒虽薄，意不在酒。吾且饮这一杯，听汝说话。多谢汝相陪。"
+    },
+    {
+      "snackId": "socrates_fig",
+      "preference": "like",
+      "text": "甜而不奢，朴而近人，乡间寻常之果，最得此味。多谢汝相馈。"
+    },
+    {
+      "snackId": "socrates_know_thyself_bread",
+      "preference": "like",
+      "text": "油书『认识你自己』五字，便不必向外苦求。此物比面包更饱人。汝这份心思，吾深谢之。"
+    },
+    {
+      "snackId": "wang_mountain_tea",
+      "preference": "like",
+      "text": "野老逢人谈往事，山僧留客荐新茶。山中一盏新茶，是待客最清的心意。汝且饮之。"
+    },
+    {
+      "snackId": "wang_longchang_fern",
+      "preference": "like",
+      "text": "采蕨西山下，扳援陟崔嵬。龙场岁月里亲手采得的山蕨，清苦中有真味。些许山野之味，汝且收下，莫辞。"
+    },
+    {
+      "snackId": "wang_liangnong_cake",
+      "preference": "like",
+      "text": "阳明归姚讲学，常设梁弄米糕与诸生论知行之旨。一块米糕，一段讲学时光。汝且尝之。"
+    },
+    {
+      "snackId": "foucault_french_basket",
+      "preference": "like",
+      "text": "食之简而安，西洋人的家常之味，别有一番意思。汝肯分吾，谢甚。"
+    },
+    {
+      "snackId": "foucault_sandwich_cola",
+      "preference": "like",
+      "text": "夹心的面包，配这冒泡的黑水，新奇得很。寻常之物亦自有其乐，多谢汝相饷。"
+    },
+    {
+      "snackId": "foucault_black_coffee",
+      "preference": "like",
+      "text": "极苦，却能提神。夜来读书，有此一杯足矣。汝这份心意，吾领了。"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "version": "snacks_catalog_v2",
+  "description": "全局零食库存互通。daily_claim：每个零食日（4:00）登录随机领 1 个。philosopher_return：其余哲学家回赠入包后，用户可转赠任一哲学家；种类只影响 PM 回应，G3 仍每送 +1。",
+  "items": [
+    {
+      "id": "spicy_stick",
+      "name": "辣条",
+      "obtain": "daily_claim",
+      "context": "读书零食"
+    },
+    {
+      "id": "rouxsong_xiaobei",
+      "name": "肉松小贝",
+      "obtain": "daily_claim",
+      "context": "读书零食",
+      "note": "面包类定名为肉松小贝"
+    },
+    {
+      "id": "beef_jerky",
+      "name": "牛肉干",
+      "obtain": "daily_claim",
+      "context": "读书零食"
+    },
+    {
+      "id": "chocolate",
+      "name": "巧克力",
+      "obtain": "daily_claim",
+      "context": "读书零食"
+    },
+    {
+      "id": "boxed_milk",
+      "name": "盒装奶",
+      "obtain": "daily_claim",
+      "context": "读书零食"
+    },
+    {
+      "id": "ginger",
+      "name": "姜",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "confucius",
+      "source": "《论语·乡党》10.8：不撤姜食，不多食。"
+    },
+    {
+      "id": "dan_shi_piao_yin",
+      "name": "箪食瓢饮",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "confucius",
+      "source": "《论语·雍也》6.11：一箪食，一瓢饮。"
+    },
+    {
+      "id": "yu_kuai",
+      "name": "鱼脍",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "confucius",
+      "source": "《论语·乡党》10.8：脍不厌细。"
+    },
+    {
+      "id": "socrates_diluted_wine",
+      "name": "兑了水的淡酒",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "socrates",
+      "source": "会饮篇：既然大家决定随意饮酒，不加勉强……我们还是用谈论来消遣这次聚会的时光。"
+    },
+    {
+      "id": "socrates_fig",
+      "name": "无花果",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "socrates",
+      "source": "理想国：那我若想知道什么是正义，就得从这'猪仔的城邦'里找。（雅典常馈水果）"
+    },
+    {
+      "id": "socrates_know_thyself_bread",
+      "name": "认识你自己烤面包",
+      "displayName": "用橄榄油写着γνῶθι σεαυτόν的烤面包",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "socrates",
+      "source": "斐德罗篇：……而是探究我自己……"
+    },
+    {
+      "id": "wang_mountain_tea",
+      "name": "山泉新茶",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "wangyangming",
+      "source": "野老逢人谈往事，山僧留客荐新茶。"
+    },
+    {
+      "id": "wang_longchang_fern",
+      "name": "龙场山蕨",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "wangyangming",
+      "source": "采蕨西山下，扳援陟崔嵬。"
+    },
+    {
+      "id": "wang_liangnong_cake",
+      "name": "余姚梁弄大糕",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "wangyangming",
+      "source": "阳明归姚讲学，常设梁弄米糕与诸生论知行之旨。"
+    },
+    {
+      "id": "foucault_french_basket",
+      "name": "法式面包奶酪葡萄酒",
+      "displayName": "法棍切片、奶酪与白葡萄酒",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "foucault",
+      "source": "在这个蛮荒之国，我最想念的是地道的法国面包、一点奶酪和一瓶葡萄酒。"
+    },
+    {
+      "id": "foucault_sandwich_cola",
+      "name": "三明治配可乐",
+      "displayName": "法棍火腿黄油三明治与瓶装可乐",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "foucault",
+      "source": "一个上好的俱乐部三明治配可乐，那就是我的乐趣。真的。"
+    },
+    {
+      "id": "foucault_black_coffee",
+      "name": "黑咖啡",
+      "obtain": "philosopher_return",
+      "fromPhilosopher": "foucault",
+      "source": "他从早到晚待在国家图书馆，靠黑咖啡和香烟源源不断地工作……"
+    }
+  ]
+}

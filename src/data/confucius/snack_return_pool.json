@@ -1,0 +1,44 @@
+{
+  "version": "snack_return_pool_v1",
+  "philosopher": "confucius",
+  "status": "approved",
+  "description": "用户赠送零食且掷中回赠时，从本池选取一份该时代食物（不附纸条）。流程与概率见 src/data/snacks/gift_flow.json（回赠概率已相对原档位表砍半，顶档 50%）。视觉造型由美工负责。",
+  "selection": "从 items 中选取（实现时可随机或按权重；目前五项均等即可）",
+  "items": [
+    {
+      "id": "ginger",
+      "name": "姜",
+      "displayName": "姜",
+      "source": "论语·乡党 10.8「不撤姜食，不多食」",
+      "note": "日常佐食；《论语》中最明确可分享的具体食物名"
+    },
+    {
+      "id": "dan_shi_piao_yin",
+      "name": "箪食瓢饮",
+      "displayName": "箪食瓢饮",
+      "source": "论语·雍也 6.11「一箪食，一瓢饮」",
+      "note": "箪盛的饭与瓢装的水；典故出颜回，产品侧作清苦家常馈赠，取简与乐之义。可作为一件回赠物展示（箪+瓢）。"
+    },
+    {
+      "id": "yu_kuai",
+      "name": "鱼脍",
+      "displayName": "鱼脍",
+      "source": "论语·乡党 10.8「脍不厌细」；可旁参诗·小雅·六月「炰鳖脍鲤」",
+      "note": "先秦细切生鱼（丝），配葱芥酱；非熟烩，亦不必做成现代日料刺身拼盘。具体造型归美工。"
+    },
+    {
+      "id": "sauce_assortment",
+      "name": "什锦酱料盒",
+      "displayName": "什锦酱料盒",
+      "source": "论语·乡党 10.8「不得其酱，不食」",
+      "note": "由「没有对应配酱则不食」化出：盒内多味酱料，总有一款相宜。菜羹、瓜、饩羊不入池。"
+    },
+    {
+      "id": "homemade_fu",
+      "name": "自制肉干",
+      "displayName": "自制肉干",
+      "source": "论语·乡党 10.8「沽酒市脯，不食」",
+      "note": "市脯不食，故回赠自制脯脩（干肉）；与用户侧「牛肉干」形成对照。造型归美工。"
+    }
+  ]
+}

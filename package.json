@@ -1,0 +1,26 @@
+{
+  "name": "philomate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs --dev",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server.mjs",
+    "test": "tsx --test tests/**/*.test.ts",
+    "selftest:attitude": "tsx src/services/confucius/attitudeCompare.selftest.ts",
+    "align": "node scripts/align.mjs",
+    "check:art": "node scripts/check-art.mjs",
+    "prepare:art": "python scripts/prepare-art-assets.py",
+    "prepare:font": "node scripts/subset-font.mjs",
+    "prepare:video": "node scripts/compress-videos.mjs",
+    "audit:performance": "node scripts/measure-performance.mjs",
+    "check:cache": "node scripts/check-cache.mjs"
+  },
+  "devDependencies": {
+    "subset-font": "^2.7.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}

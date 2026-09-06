@@ -1,0 +1,32 @@
+{
+  "version": "v1",
+  "description": "人工确认：不纳入 Qwen 预标注；保留原文，不产 exegesis/attitude",
+  "confirmedBy": "user",
+  "confirmedAt": "2026-07-04",
+  "entries": [
+    {
+      "id": "3.5",
+      "chapterName": "八佾",
+      "textSnippet": "夷狄之有君，不如诸夏之亡也",
+      "reason": "训诂与价值解读分歧大，产品未定立场"
+    },
+    {
+      "id": "2.12",
+      "chapterName": "为政",
+      "textSnippet": "君子不器",
+      "reason": "旨趣解读分歧（专一 vs 通才 vs 不器用），态度对象不稳定"
+    },
+    {
+      "id": "8.9",
+      "chapterName": "泰伯",
+      "textSnippet": "民可使由之，不可使知之",
+      "reason": "句读分歧导致态度方向不同"
+    },
+    {
+      "id": "17.25",
+      "chapterName": "阳货",
+      "textSnippet": "唯女子与小人为难养也",
+      "reason": "性别与价值解读敏感，产品边界未定"
+    }
+  ]
+}

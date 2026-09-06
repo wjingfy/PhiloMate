@@ -1,0 +1,120 @@
+{
+  "version": "snack_evaluations_v3.1",
+  "philosopher": "confucius",
+  "status": "approved",
+  "description": "用户赠送零食时的固定评语（不随机）。含日领零食与他人回赠转入物。成句遵循 sentence_organization §一／SENTENCE_ORG_PRINCIPLES；批评落在物之性，末尾受惠致谢。种类不影响好感分值。",
+  "rules": {
+    "fixed": true,
+    "followSentenceOrganization": true,
+    "mustThank": true,
+    "dislikePattern": "物性批评与受惠致谢嵌同一口气（然／仍），禁「善。论述」硬接",
+    "scoreImpact": "种类不影响好感分值，仅影响本回应",
+    "styleNotes": [
+      "自称丘；「汝」能省则省",
+      "古文优先译物名；不能自然译再留专名；禁今所谓／今称学术嵌套；禁句首商标腔",
+      "禁破折号、省略号、直角引号、分号",
+      "禁君子当／汝当说教",
+      "自然一气，善用逗号；勿缩句电报腔；勿「可也／贤哉」标签硬接"
+    ]
+  },
+  "evaluations": [
+    {
+      "snackId": "spicy_stick",
+      "preference": "dislike",
+      "attitudeHint": 2,
+      "anchor": "气烈、辛过 → 过犹不及",
+      "text": "此条辛烈，过则失中，然馈者情厚，丘不敢却，受而谢之。"
+    },
+    {
+      "snackId": "rouxsong_xiaobei",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "制精味和 → 食不厌精",
+      "text": "肉松小贝，制精而味和，近食不厌精之意，友惠及此，丘何敢辞。"
+    },
+    {
+      "snackId": "beef_jerky",
+      "preference": "dislike",
+      "attitudeHint": 2,
+      "anchor": "市脯 → 沽酒市脯，不食",
+      "text": "市脯非自作，丘素不食，然友惠不可虚，仍受之。"
+    },
+    {
+      "snackId": "chocolate",
+      "preference": "dislike",
+      "attitudeHint": 2,
+      "anchor": "甘过则腻 → 失中",
+      "text": "西来甘食，甘甚则腻，乐之易过，然馈者情厚，丘不敢却。"
+    },
+    {
+      "snackId": "boxed_milk",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "温润可养",
+      "text": "牛乳温润可养，友惠及此，丘受而谢。"
+    },
+    {
+      "snackId": "socrates_diluted_wine",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "会饮：饮酒不强，以谈论消遣 → 不及乱、以言相乐",
+      "text": "酒兑以水，淡而不强，可与言谈，可也，丘受之。"
+    },
+    {
+      "snackId": "socrates_fig",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "理想国「猪仔城邦」朴素果食 → 饭疏食饮水之乐",
+      "text": "无花果甘朴，近疏食饮水之乐，友惠及此，丘受之。"
+    },
+    {
+      "snackId": "socrates_know_thyself_bread",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "斐德罗：探究自己 / γνῶθι σεαυτόν → 省身",
+      "text": "贤哉！省身之义近也，丘受之。"
+    },
+    {
+      "snackId": "wang_mountain_tea",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "山僧留客荐新茶 → 交游以清、留客之谊",
+      "text": "山泉新茶，留客以清，可也，友惠及此，丘受之。"
+    },
+    {
+      "snackId": "wang_longchang_fern",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "采蕨陟崔嵬 → 艰而得食、俭可茹",
+      "text": "龙场山蕨，扳援采而得，艰而可茹，俭亦不弃，丘受之。"
+    },
+    {
+      "snackId": "wang_liangnong_cake",
+      "preference": "like",
+      "attitudeHint": 0,
+      "anchor": "梁弄米糕与诸生论知行 → 共食言学",
+      "text": "梁弄大糕，出余姚，共食可与言学，友惠及此，丘何敢辞。"
+    },
+    {
+      "snackId": "foucault_french_basket",
+      "preference": "accept",
+      "attitudeHint": 1,
+      "anchor": "味杂而厚，酒不及乱（寓意弱，就物评）",
+      "text": "面包奶酪与酒同至，味杂而厚，然友惠不可虚，丘受之。"
+    },
+    {
+      "snackId": "foucault_sandwich_cola",
+      "preference": "dislike",
+      "attitudeHint": 2,
+      "anchor": "甘杂易过（就物评）",
+      "text": "夹食配甘饮，甘杂易过，然友惠不可虚，丘受之。"
+    },
+    {
+      "snackId": "foucault_black_coffee",
+      "preference": "dislike",
+      "attitudeHint": 2,
+      "anchor": "苦烈失中（就物评）",
+      "text": "苦饮烈甚，过则伤中，然友惠不可虚，丘受之。"
+    }
+  ]
+}

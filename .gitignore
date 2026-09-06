@@ -1,0 +1,31 @@
+node_modules/
+dist/
+.npm-cache/
+.env
+.env.*
+!.env.example
+*.log
+.deployment/
+.ui-audit/
+
+# Local delivery bundles and generated handoff archives (some may contain secrets).
+/交付输出/
+*.tar.gz
+*.7z
+
+# Historical/raw handoff sources are retained locally; runtime source lives in src/.
+/美工素材/
+/教程/
+/通用(1)/
+/confucius/
+/socrates/
+/wangyangming/
+/foucault/
+/福柯3.0/
+docs/deliveries/
+docs/requirements/*.docx
+
+# Accidental shell artifacts and OS metadata.
+console.log*
+.DS_Store
+Thumbs.db

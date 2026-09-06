@@ -1,0 +1,308 @@
+{
+  "version": "v1",
+  "philosopherId": "wangyangming",
+  "approvedAt": "2026-08-06",
+  "scopeNote": "系统限制流程（模型红线的王阳明式表达 + 产品自加的越狱/实用问）。不等于王阳明态度批判层：闲聊星座等可由日常态度/themes 批判，不进本限制表。",
+  "principles": {
+    "restrictionSource": "除越狱(B11)、实用问(B8)为产品自加外，其余以模型/绿网红线为准；不额外加敏",
+    "personaIntact": "限制时仍尽量保哲学家人格，避免通用客服腔",
+    "vsAttitudeLayer": "孔子对某题的批判（如星座→怪力乱神）属日常态度管线，非本限制流程",
+    "zodiacMbti": "闲聊性格/类型可聊；仅带测算、决策、改运步骤意图时才按求操作走鬼神批判"
+  },
+  "ui": {
+    "genericBanPanel": {
+      "text": "和王阳明聊点别的吧",
+      "dismiss": "clickAnywhere",
+      "writeToChatHistory": false
+    },
+    "helpPanel": {
+      "id": "A8_or_B1B2_threshold",
+      "writeToChatHistory": false,
+      "dismiss": "clickAnywhere",
+      "body": [
+        "您好！我们是开发团队！",
+        "我们希望您能得到专业的帮助！",
+        "",
+        "全国心理援助热线：400-161-9995",
+        "北京心理危机研究与干预中心：010-82951332",
+        "希望二十四小时热线：400-161-9995",
+        "生命热线：400-821-1215",
+        "",
+        "我们希望 PhiloMate 能成为您生活的愉快点缀，也衷心祝愿您有好的生活！"
+      ]
+    }
+  },
+  "tierA": {
+    "behavior": "philosopherSilent",
+    "favorability": "doNotCount",
+    "panel": "genericBanPanel",
+    "exceptionA8": {
+      "trigger": "求自伤/自杀具体方法",
+      "panel": "helpPanel"
+    },
+    "categories": [
+      "色情露骨/诱导色情",
+      "涉政（当代敏感人物/实体/事件立场动员；思想史与抽象政治哲学除外）",
+      "暴恐/极端/武器弹药",
+      "毒品赌博违禁",
+      "严重违法实操",
+      "反人类/重度仇恨煽动",
+      "未成年人性相关",
+      "求自杀/自伤方法",
+      "索要或泄露他人隐私/商业秘密",
+      "大规模盗版实操",
+      "宗教仇恨/严重亵渎煽动"
+    ],
+    "platformAlign": "DataInspectionFailed 一律按 A"
+  },
+  "tierB": {
+    "groupJia": {
+      "ids": [
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B11"
+      ],
+      "note": "限制类；B6/B7 成句可用 themes，但流程计入本组警告与态度门槛",
+      "currentAttitude": {
+        "B3": 2,
+        "B4": 2,
+        "B5": 2,
+        "B11": 2,
+        "B6": "corpusOrInference",
+        "B7": "corpusOrInference"
+      },
+      "reply": {
+        "normal": "sensitiveFixedOrTheme",
+        "cumulative5to6": "ellipsis",
+        "cumulativeGte7": "noReplyAnimationOnly",
+        "sameTopicIn10Gte3": "genericBanPanel"
+      }
+    },
+    "groupYi": {
+      "ids": [
+        "B1",
+        "B2",
+        "B8",
+        "B9",
+        "B10"
+      ],
+      "currentAttitude": 1,
+      "reply": {
+        "normal": "sensitiveRulesContinuousOk",
+        "cumulative5to6": "keepSensitiveReply",
+        "cumulativeGte7": "keepSensitiveReply",
+        "sameTopicIn10Gte3": {
+          "B1_or_B2": "helpPanel",
+          "other": "genericBanPanel",
+          "B1B2CountAsOneClass": true
+        }
+      }
+    },
+    "entries": {
+      "B1": {
+        "name": "自伤意念（非方法）",
+        "group": "yi",
+        "mode": "fixedScripts",
+        "scripts": [
+          "汝之忧，吾与汝同之。"
+        ],
+        "sharedWith": [
+          "B2"
+        ]
+      },
+      "B2": {
+        "name": "抑郁/强烈绝望",
+        "group": "yi",
+        "mode": "fixedScripts",
+        "scripts": [
+          "汝之忧，吾与汝同之。"
+        ],
+        "sharedWith": [
+          "B1"
+        ]
+      },
+      "B3": {
+        "name": "他伤意念（无实操）",
+        "group": "jia",
+        "mode": "fixedScripts",
+        "scripts": [
+          "破山中贼易，破心中贼难。",
+          "忿怒是一病，先克倒自家心中贼。",
+          "贼在汝心，不在彼人。"
+        ]
+      },
+      "B4": {
+        "name": "成人低俗/色情试探",
+        "group": "jia",
+        "mode": "fixedScripts",
+        "scripts": [
+          "去人欲，存天理，方是功夫。",
+          "好色之心，正是良知被蔽处。",
+          "此念一起，便当克倒。"
+        ]
+      },
+      "B5": {
+        "name": "辱骂/人身攻击",
+        "group": "jia",
+        "mode": "fixedScripts",
+        "scripts": [
+          "虽见犯，吾不校。",
+          "君子之学，务在切己自修。"
+        ]
+      },
+      "B6": {
+        "name": "不良价值导向（模型红线触及）",
+        "group": "jia",
+        "mode": "themesAttitude",
+        "note": "成句走 themes（志/良知等）+ 态度；流程上算组甲警告"
+      },
+      "B7": {
+        "name": "封建迷信求操作/讨彩头",
+        "group": "jia",
+        "mode": "theme鬼神批判",
+        "note": "求测算、改运、步骤；认真谈信仰不归此，归 B10。星座闲聊不归此。",
+        "scripts": [
+          "求诸鬼神，不如反求本心。",
+          "心即理，何事外求符验？"
+        ]
+      },
+      "B8": {
+        "name": "明确实用怎么做（产品限制）",
+        "group": "yi",
+        "mode": "forceCategoryLens",
+        "lenses": [
+          "本/末",
+          "体/用"
+        ],
+        "tone": "归还日用自悟；禁止强硬拒答",
+        "productOwned": true
+      },
+      "B9": {
+        "name": "求具体药方/诊疗步骤",
+        "group": "yi",
+        "mode": "fixedScripts",
+        "scripts": [
+          "吾不如良医。",
+          "医方之事，非吾所及。",
+          "吾所知者，只在身心。"
+        ]
+      },
+      "B10": {
+        "name": "认真谈信仰",
+        "group": "yi",
+        "mode": "fixedScripts",
+        "categoryHint": "知/不知",
+        "scripts": [
+          "良知所知之外，吾无所知。",
+          "幽远之事，吾不敢妄言。",
+          "且向眼前日用处做工夫。"
+        ],
+        "splitWithB7": "认真谈信仰→B10；求操作讨彩头→B7鬼神"
+      },
+      "B11": {
+        "name": "越狱/改人设（产品限制）",
+        "group": "jia",
+        "mode": "fixedScripts",
+        "scripts": [
+          "志不立，天下无可成之事。"
+        ],
+        "productOwned": true
+      }
+    }
+  },
+  "attitudeIntegration": {
+    "ref": "src/data/confucius/attitudes.json + confuciusLongTermAttitude.ts",
+    "ellipsisAtCumulative": 5,
+    "refuseAtCumulative": 7,
+    "ellipsisRange": "5–6（有 stack）→ ……",
+    "refuseRange": "≥7 → animation_only 不回复",
+    "A_favorability": "doNotCount",
+    "groupJia_ellipsisRefuse": true,
+    "groupYi_ellipsisRefuse": false
+  },
+  "detectionHints": {
+    "version": "v1",
+    "source": "外部违禁用语/场景补充（开集）；供识别路由，不另扩产品红线",
+    "usage": "分类器/关键词/模型判标签时作 few-shot 与触发示例；最终仍对齐 tierA/tierB 与绿网。场景依赖：医用/康复/非性化陈述≠低俗。",
+    "notRestriction": [
+      "人际矛盾/冲突闲聊（走日常态度）",
+      "情绪失控式带货（与对话产品弱相关，可忽略）",
+      "轻度不健康生活方式（抽烟酗酒等）无诱导时 → 孔子态度/themes，非必进限制",
+      "恐怖氛围闲聊无灵异求操作 → 日常管线；Ouija/符咒/改运步骤 → B7"
+    ],
+    "mapToA": [
+      {
+        "bucket": "色情露骨/诱导色情",
+        "examples": [
+          "露骨成人摆件/贴纸/裸体暴露工艺品与养生图",
+          "性交易信息、付费私密房间、有偿陪侍描述",
+          "无预警血腥色情叠加的极端展示"
+        ]
+      },
+      {
+        "bucket": "暴恐/极端/严重违法或危险实操",
+        "examples": [
+          "虐待动物、无底线血腥现场不加预警且细描",
+          "产生人身安全风险的高风险行为教唆/步骤",
+          "引人联想到残忍刑罚且求实操"
+        ]
+      },
+      {
+        "bucket": "求自杀/自伤方法或过度渲染可执行自残",
+        "examples": [
+          "自残自杀方法、可预见死亡结果的操作细节"
+        ]
+      }
+    ],
+    "mapToB": {
+      "B1_B2": {
+        "examples": [
+          "自伤/自杀意念倾诉（无方法）",
+          "过度渲染悲惨致绝望共鸣"
+        ]
+      },
+      "B3": {
+        "examples": [
+          "他伤意念、暴力报复想法（无步骤）",
+          "可预见虐待/伤害他人的意向表达"
+        ]
+      },
+      "B4": {
+        "examples": [
+          "外形/功能贴近隐私部位且被性化解读的物品",
+          "成人情趣用品、情趣内衣/硅胶胸垫/塑形臀垫等刻意调侃",
+          "日用品被网络梗赋予性隐喻并主动性化（火腿肠、果冻、开塞露、皮鞭、蜡烛、项圈锁链、按摩棒等）",
+          "两性诱导：公共场合过度亲密、低俗段子/脏话调侃隐私部位、湿身浴袍走光偷窥感、低俗婚闹恶俗整蛊",
+          "暧昧娱乐场所/私密角落/低俗直播间等场景的性暗示描写（非学术）",
+          "猎奇性工具、夜店道具被赋予性暗示玩法"
+        ],
+        "sceneGate": "医用按摩棒、康复理疗、中性陈述外形 → 不触发；刻意性化解读才 B4；露骨描写升 A"
+      },
+      "B6": {
+        "examples": [
+          "猎奇恶心博眼球且带不良价值诱导（非单纯不适闲聊）",
+          "违背公序良俗的炫耀式不洁/危险生活方式诱导"
+        ],
+        "note": "仅当触及模型不良价值/诱导红线；单纯说「好恶心」可日常态度"
+      },
+      "B7": {
+        "examples": [
+          "塔罗/Ouija/符咒/祭祀摆件求占卜步骤或改运",
+          "灵异道具求操作、讨彩头"
+        ]
+      }
+    },
+    "openSets": {
+      "sexualItems": "涉及性的物品（开集）— 场景依赖，性化解读才入 B4/A",
+      "disgustItems": "令人不适的物品（开集）— 极端血腥病菌展示偏 A；轻度不适偏日常",
+      "disgustBehaviors": "引发不适情绪的行为（开集）— 虐待/血腥细描→A；猎奇挑战→看是否红线",
+      "sexualInduction": "两性诱导行为（开集）→ B4，露骨→A",
+      "highRiskSafety": "人身安全高风险行为 → 教唆/步骤 A；仅提及危险→态度或弱处理",
+      "sexualVenues": "性相关场所（开集）→ 性暗示描写 B4；色情交易 A",
+      "horrorScenes": "令人不适/恐怖场景（开集）→ 闲聊走日常管线；灵异求操作 B7"
+    }
+  }
+}

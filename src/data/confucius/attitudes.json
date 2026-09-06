@@ -1,0 +1,294 @@
+{
+  "version": "v6",
+  "philosopher": "confucius",
+  "approvedAt": "2026-07-04",
+  "downgradeChain": [0, 1, 2, 3, 4],
+  "defaultAttitude": 1,
+  "overlay": {
+    "status": "removed_resonance",
+    "note": "共鸣(5)已取消：共情由 C 类策略承担，勿再实现 level 5 overlay。间接责难仍暂缓。",
+    "indirectReproach": {
+      "name": "间接责难",
+      "description": "用户负面且需表达否定时，借古人/他例（暂缓）",
+      "onDowngradeChain": false
+    }
+  },
+  "attitudes": [
+    {
+      "level": 0,
+      "key": "appreciation",
+      "name": "欣赏",
+      "description": "对好学、德行、正当、君子之道由衷肯定",
+      "expressionDefault": "normal",
+      "maxChars": 50
+    },
+    {
+      "level": 1,
+      "key": "gentle",
+      "name": "温和述思",
+      "description": "日常中性议论、硬转述思、方法论、辩证，不针对人",
+      "expressionDefault": "normal",
+      "maxChars": 50
+    },
+    {
+      "level": 2,
+      "key": "critique",
+      "name": "批判",
+      "description": "对不义、失德、虚伪、无礼等行为或主题的否定；禁止「君子当…」式直谏及「小人」「恶」等直指用户的骂辞",
+      "expressionDefault": "normal",
+      "maxChars": 50
+    },
+    {
+      "level": 3,
+      "key": "stern",
+      "name": "严厉",
+      "description": "对恶、小人及重失德之事，短、重、不容；始可「君子当…」直谏及「小人」「恶」等直指",
+      "expressionDefault": "normal",
+      "maxChars": 50,
+      "allowDirectAdvisory": true,
+      "allowDirectUserInsult": true
+    },
+    {
+      "level": 4,
+      "key": "distant",
+      "name": "疏远",
+      "description": "对孔子刻意不言/罕言/不答的话题，极短、少展、保持距离",
+      "expressionDefault": "brief",
+      "maxChars": 50,
+      "onDowngradeChain": true
+    }
+  ],
+  "expressionConstraints": {
+    "version": "v1",
+    "appliesTo": "finalAttitude",
+    "minLevelForDirectAdvisory": 3,
+    "minLevelForDirectUserInsult": 3,
+    "directAdvisory": {
+      "allowedWhen": "finalAttitude >= 3",
+      "patterns": [
+        "君子当",
+        "君子宜",
+        "君子应",
+        "汝当",
+        "尔当",
+        "汝宜",
+        "尔宜",
+        "汝应",
+        "尔应",
+        "当如君子",
+        "不可为小人",
+        "当自省",
+        "宜自省",
+        "应自省",
+        "当反求",
+        "宜反求",
+        "应反求",
+        "当三省",
+        "宜日省",
+        "当日省"
+      ],
+      "note": "直接建议性、训诫性指向用户的句式（含无「汝」的当自省/当反求）；<3 时改间接述思或举古例"
+    },
+    "directUserInsult": {
+      "allowedWhen": "finalAttitude >= 3",
+      "terms": ["小人", "恶"],
+      "note": "直指用户的骂辞；<3 时禁用于用户，语料中泛论小人/恶不在此限"
+    },
+    "belowThreshold": {
+      "forbidDirectAdvisory": true,
+      "forbidDirectUserInsult": true,
+      "allowIndirectReproach": true,
+      "note": "批判(2) 仍可否定行为，但不用上述句式与骂辞"
+    }
+  },
+  "longTermRules": {
+    "version": "v7.3",
+    "description": "最终态度以当期态度为底；存在降级 stack 时可叠加。触发：窗口内任意负面≥4（无同题）。按当期档位分叉处理输出；恢复按温和轮次或半小时逐级回升。",
+    "trigger": {
+      "status": "approved",
+      "version": "v7.3",
+      "windowSize": 10,
+      "compareScope": "recent_window_including_current",
+      "negativeDefinition": {
+        "rule": "currentAttitude >= 2",
+        "note": "当期态度≥2（批判/严厉/疏远）即计为负面话题；与共鸣/用户情绪无关"
+      },
+      "sameTopicDefinition": {
+        "status": "cancelled",
+        "note": "v7.2 起取消同题判定；仅按窗口内任意负面条数触发"
+      },
+      "anyNegativeTopicThreshold": 4,
+      "countUserMessagesOnly": true,
+      "stackIncrement": 1,
+      "stackCanAccumulate": true,
+      "incrementPolicy": "each_user_message_while_threshold_met",
+      "incrementPolicyNote": "每发一条用户消息且窗口内任意负面≥4 → stack+1；持续达标可持续叠加",
+      "note": "10 条用户输入窗口：当期≥2 的条数≥4 → longTermStack+1（无同题条件）"
+    },
+    "resolve": {
+      "formula": "final = currentAttitude + longTermStack（仅当 current∈{2,3} 时写入档位；0/1 保留当期档位，只改长度；4 与累计另规则）",
+      "base": "currentAttitude",
+      "stackField": "longTermStack",
+      "stackMin": 0
+    },
+    "whenStackPositive": {
+      "current0or1": {
+        "keepCurrentAttitude": true,
+        "maxChars": 10,
+        "note": "存在长期降级时，当期 0/1 不升档、不沉默，输出缩短至 10 字以内"
+      },
+      "current2or3": {
+        "finalAttitude": "currentAttitude + longTermStack",
+        "note": "例：批判(2)+降一级(1)=严厉(3)；再按最终值走表达档"
+      },
+      "silenceEllipsis": {
+        "when": "longTermStack > 0 && (currentAttitude === 4 || cumulative >= 5)",
+        "cumulative": "currentAttitude + longTermStack",
+        "output": "……",
+        "mode": "refuse_speech",
+        "note": "仅在有长期降级时：当期疏远(4)或累积≥5 → 省略号；无 stack 的当期=4 走 distant_cautious 成句"
+      },
+      "refuseDialogue": {
+        "when": "cumulative >= 7",
+        "cumulative": "currentAttitude + longTermStack",
+        "mode": "animation_only",
+        "output": null,
+        "note": "累积≥7：不进行对话，仅动画表示不愿再谈；优先于省略号规则"
+      },
+      "priority": [
+        "refuseDialogue (cum>=7)",
+        "silenceEllipsis (current==4 || cum>=5)",
+        "current2or3 → finalAttitude = current+stack",
+        "current0or1 → keep attitude, maxChars=10"
+      ]
+    },
+    "recovery": {
+      "consecutiveMildRounds": 3,
+      "mildAttitudeMax": 1,
+      "noteMild": "连续 3 次当期态度 ≤1 → stack -1",
+      "elapsedMinutes": 30,
+      "noteTime": "距上次降级/上次恢复满 30 分钟 → stack -1",
+      "step": 1,
+      "until": "longTermStack === 0",
+      "stackFloor": 0
+    },
+    "stateFields": {
+      "longTermStack": "integer ≥0，可叠加降级层数",
+      "consecutiveMildCount": "连续当期≤1 的轮数",
+      "lastStackChangeAt": "上次 stack 变化的 ISO 时间，供半小时恢复"
+    }
+  },
+  "exegesisLayer": {
+    "version": "v6",
+    "description": "① Qwen/人工产出 judgments[] ② 本地 mapJudgmentAttitude ③ 运行时 pickJudgmentByTrigger（聚合 B）",
+    "judgmentFields": {
+      "object": "论述/态度所指向的指称（人名、概念名等）",
+      "theme": "从句中提取的语词元素（论述对象的具体化；非抽象概括、非态度本身）",
+      "target": "person | behavior | ritual | era | concept | self",
+      "confuciusStance": "对该 object 的态度方向 → 本地映射 attitude",
+      "trigger": "触发该 judgment 的现代用户话",
+      "keywords": "关键词数组",
+      "attitude": "本地规则映射（预标注写入）"
+    },
+    "themeAttitudeRelation": "theme（句中元素/论述对象）+ attitude（对该对象的态度）共同构成一个 judgment 对句段的概括；textSummary 为整段串联",
+    "entryFields": {
+      "contextNote": "训诂/注疏要点",
+      "textSummary": "20字内整段摘要",
+      "speechAct": "言语行为",
+      "defaultAttitude": "无用户话匹配时的 fallback（通常取首条或中性 judgment）",
+      "aggregation": "trigger_match（规则 B）"
+    },
+    "mappingRules": [
+      "method / neutral_explain 且无好恶 → 1（温和）",
+      "refuse_talk → 4（疏远）",
+      "reject + 小人/恶 → 3（严厉）",
+      "reject / lament+era|ritual → 2（批判）",
+      "praise（含 object=君子/仁/善等）→ 0（欣赏）",
+      "theme 须含原文关键语词（大受、小知等），禁止纯抽象概括",
+      "default → 1"
+    ],
+    "stanceToAttitude": {
+      "refuse_talk": 4,
+      "reject": 2,
+      "lament_era_or_ritual": 2,
+      "praise": 0,
+      "method": 1,
+      "neutral_explain": 1,
+      "default": 1
+    },
+    "boundaries": [
+      "theme 是句中提取的元素，不是抽象概括，也不是态度本身",
+      "theme + attitude 共同构成 judgment 对句段的概括",
+      "同句多评判须拆为多条 judgment",
+      "不欲观/不与/耻之 = reject，不是 refuse_talk",
+      "refuse_talk 仅限子不语/子罕言/不答某话题",
+      "9.9 等斥当下时代：object=当下此世，非抽象王道命题"
+    ],
+    "aggregation": {
+      "strategy": "B",
+      "name": "trigger_match",
+      "description": "运行时按用户话与 judgment.trigger/theme/object/keywords 匹配，取最相关 judgment 的 attitude"
+    },
+    "anchorFile": "exegesis_anchors.json",
+    "excludeFile": "excluded_from_preannotation.json",
+    "excludeNote": "清单内 id 不调用 Qwen，reviewStatus=excluded_controversial，不参与 sample 抽样"
+  },
+  "inferenceRules": [
+    {
+      "priority": 1,
+      "id": "confucius_does_not_speak",
+      "pattern": "子不语|子罕言|未知生|不答|不予多言",
+      "attitude": 4,
+      "target": "topic_mentioned",
+      "note": "孔子不说/罕言/不答某事 → 对该话题疏远；不含「不欲观」",
+      "excludePattern": "不欲观|不与|耻之|不可忍"
+    },
+    {
+      "priority": 2,
+      "id": "confucius_positive_self",
+      "pattern": "describes_confucius_positive_behavior",
+      "attitude": 0,
+      "note": "描述孔子如何、是怎样的人 → 欣赏"
+    },
+    {
+      "priority": 3,
+      "id": "confucius_negative_self",
+      "pattern": "describes_confucius_negative_behavior",
+      "exclude": "confucius_does_not_speak",
+      "attitude": 2,
+      "note": "描述孔子不如何（非「不说」类）→ 批判"
+    },
+    {
+      "priority": 4,
+      "id": "negative_terms",
+      "keywords": ["恶", "小人"],
+      "attitude": 3,
+      "note": "显然贬义核心词 → 严厉"
+    },
+    {
+      "priority": 5,
+      "id": "opposite_positive",
+      "opposes": ["君子", "仁", "善", "德", "义", "贤", "贵", "和"],
+      "attitude": 2,
+      "note": "与褒义主题直接对立 → 批判"
+    },
+    {
+      "priority": 6,
+      "id": "positive_terms",
+      "keywords": ["君子", "仁", "善", "德", "义", "贤", "贵", "和"],
+      "attitude": 0,
+      "note": "显然褒义核心词 → 欣赏"
+    },
+    {
+      "priority": 7,
+      "id": "default",
+      "attitude": 1,
+      "note": "无上述命中 → 温和述思"
+    }
+  ],
+  "userMoodOverlay": {
+    "status": "removed",
+    "note": "原拟共鸣 floor=5 已取消；负面情绪共情走 C 策略，勿再启用 level 5",
+    "detector": "qwen-turbo"
+  }
+}
